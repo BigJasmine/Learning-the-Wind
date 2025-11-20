@@ -87,3 +87,5 @@ if __name__ == "__main__":
     print(combined_df.head())
     print(f"Total rows: {len(combined_df)}")
     print(f"Stations included: {combined_df['station'].unique()}")
+
+    combined_df.to_csv("data/midas_combined.csv", index=False)
