@@ -1,7 +1,37 @@
-*.csv
-*.xlsx
+# --- Python basics ---
 __pycache__/
-.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.pkl   # saved models
 *.log
-*.tmp
+
+# --- Virtual environment ---
 .venv/
+env/
+venv/
+
+# --- Jupyter / VSCode ---
+.ipynb_checkpoints/
+.vscode/
+
+# --- Data files ---
+*.csv        # raw/processed datasets
+*.nc         # NetCDF ERA5 datasets
+*.h5         # HDF5 files
+*.json       # large data exports
+*.xlsx       # Excel files
+
+# --- Outputs ---
+plots/
+*.png
+*.jpg
+*.pdf
+*.svg
+predictions_all_models.csv
+model_metrics_summary.csv
+model_report.pdf
+
+# --- OS / Misc ---
+.DS_Store
+Thumbs.db
